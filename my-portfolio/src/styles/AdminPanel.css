@@ -1,0 +1,447 @@
+/* Admin Panel Styles */
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0c0c14 0%, #1a1a2e 100%);
+  padding: 20px;
+}
+
+.admin-login-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.admin-login-box h2 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-login-box p {
+  color: #b0b0c0;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4361ee;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4361ee, #f72585);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.admin-login-box button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(67, 97, 238, 0.3);
+}
+
+.admin-login-box button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: rgba(247, 37, 133, 0.1);
+  color: #f72585;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid rgba(247, 37, 133, 0.2);
+}
+
+.admin-dashboard {
+  padding: 40px;
+  background: #0c0c14;
+  min-height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-header h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.refresh-btn, .logout-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.refresh-btn {
+  background: rgba(67, 97, 238, 0.1);
+  color: #4361ee;
+  border: 1px solid rgba(67, 97, 238, 0.3);
+}
+
+.refresh-btn:hover {
+  background: rgba(67, 97, 238, 0.2);
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #f72585, #7209b7);
+  color: white;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(247, 37, 133, 0.3);
+}
+
+.no-messages {
+  text-align: center;
+  padding: 80px 20px;
+  color: #b0b0c0;
+}
+
+.no-messages svg {
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-messages p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.message-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.message-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.message-card.unread {
+  border-left: 4px solid #4361ee;
+}
+
+.message-card.read {
+  border-left: 4px solid #4cc9f0;
+}
+
+.message-card.replied {
+  border-left: 4px solid #80ffdb;
+}
+
+.message-card.archived {
+  border-left: 4px solid #7209b7;
+  opacity: 0.8;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sender-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4361ee, #4cc9f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.sender-details h4 {
+  color: white;
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sender-details .email {
+  color: #b0b0c0;
+  font-size: 14px;
+  margin: 0;
+  word-break: break-all;
+}
+
+.message-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.message-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b0b0c0;
+  font-size: 14px;
+}
+
+.status-badge {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.unread {
+  background: rgba(67, 97, 238, 0.2);
+  color: #4361ee;
+}
+
+.status-badge.read {
+  background: rgba(76, 201, 240, 0.2);
+  color: #4cc9f0;
+}
+
+.status-badge.replied {
+  background: rgba(128, 255, 219, 0.2);
+  color: #80ffdb;
+}
+
+.status-badge.archived {
+  background: rgba(114, 9, 183, 0.2);
+  color: #7209b7;
+}
+
+.message-body {
+  color: #d0d0e0;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.status-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+  color: #b0b0c0;
+}
+
+.status-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.status-btn.active {
+  color: white;
+}
+
+.status-btn:nth-child(1).active {
+  background: rgba(67, 97, 238, 0.3);
+  color: #4361ee;
+}
+
+.status-btn:nth-child(2).active {
+  background: rgba(128, 255, 219, 0.3);
+  color: #80ffdb;
+}
+
+.status-btn:nth-child(3).active {
+  background: rgba(114, 9, 183, 0.3);
+  color: #7209b7;
+}
+
+.delete-action {
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background: rgba(247, 37, 133, 0.1);
+  color: #f72585;
+  border: 1px solid rgba(247, 37, 133, 0.2);
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(247, 37, 133, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 25px 20px;
+  }
+  
+  .admin-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .admin-actions {
+    justify-content: space-between;
+  }
+  
+  .message-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .message-meta {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .message-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .status-actions {
+    justify-content: center;
+  }
+  
+  .delete-action {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-login-box {
+    padding: 30px 20px;
+  }
+  
+  .sender-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .status-actions {
+    justify-content: stretch;
+  }
+  
+  .status-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
