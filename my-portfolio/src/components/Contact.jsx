@@ -100,15 +100,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="detail-item">
-              <div className="detail-icon">
-                <FaUser />
-              </div>
-              <div className="detail-content">
-                <h4>Phone</h4>
-                <span>+91 9043654500</span>
-              </div>
-            </div>
+            
             
             <div className="detail-item">
               <div className="detail-icon">
