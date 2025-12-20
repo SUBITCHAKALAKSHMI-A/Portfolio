@@ -8,19 +8,19 @@ const Education = () => {
       degree: 'B.Tech in Artificial Intelligence & Machine Learning',
       institution: 'Kongu Engineering College',
       period: '2023–2027',
-      cgpa: 'CGPA: 8.29',
+      cgpa: 'CGPA: 8.61',
       icon: <FaUniversity />
     },
     {
       degree: 'HSC',
-      institution: 'Cluny Matriculation Higher Secondary School',
+      institution: 'Vivekanandha Matric Higher Secondary School',
       period: '2023',
-      cgpa: '',
+      cgpa: 'PERCENTAGE: 88.17%',
       icon: <FaGraduationCap />
     },
     {
       degree: 'SSLC',
-      institution: 'Cluny Matriculation Higher Secondary School',
+      institution: 'Jayaraj Annapackiam Matriculation School',
       period: '2021',
       cgpa: '',
       icon: <FaGraduationCap />
