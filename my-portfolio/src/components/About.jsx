@@ -420,6 +420,35 @@ const About = () => {
     </div>
   </div>
 </div>
+      <div className="achievement-images-section">
+  
+  <div className="gallery-container">
+    <div className="photo-display-grid">
+      {achievementImages.map((img, index) => (
+        <div key={index} className="photo-frame">
+          <div className="photo-frame-content">
+            <img 
+              src={img} 
+              alt={`Achievement ${index + 1}`}
+              className="achievement-photo"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.querySelector('.photo-placeholder').style.display = 'flex';
+              }}
+            />
+            <div className="photo-placeholder">
+              <FaTrophy className="placeholder-icon" />
+              <span>Achievement {index + 1}</span>
+            </div>
+          </div>
+          <div className="photo-info">
+            <span className="photo-tag">Achievement #{index + 1}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
           </div>
         </motion.div>
       </div>
