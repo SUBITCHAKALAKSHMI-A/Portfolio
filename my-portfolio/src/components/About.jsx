@@ -420,7 +420,7 @@ const About = () => {
     </div>
   </div>
 </div>
-      <div className="achievement-images-section">
+<div className="achievement-images-section">
   
   <div className="gallery-container">
     <div className="photo-display-grid">
